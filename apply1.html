@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Apply for bible Study</title>
+		<link rel="shortcut icon" href="img/logo/logo1.png" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/apply.css" />
+		<link rel="stylesheet" type="text/css" href="Css/Up.css" />
+		<link
+			rel="stylesheet"
+			href="font-awesome-4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/tiltedpage-scroll.css" />
+		<link rel="stylesheet" href="css/book.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="overlay">
+			<div class="spinner"></div>
+		</div>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fa fa-angle-up"></i>Top
+		</button>
+
+		<section class="section-apply">
+			<div class="container-application">
+				<div class="user signinBx">
+					<div class="imgBx">
+						<img
+							src="img/apply/apply3.jpg"
+							alt=""
+							class="img-fluid apImg1"
+						/>
+					</div>
+					<div class="formBx">
+						<form>
+							<h2 class="text-center">Application Process</h2>
+							<h4 class="text-center">Personal details</h4>
+							<input type="text" placeholder="Names" />
+							<input type="text" placeholder="Surname" />
+							<select id="citizenCountry">
+								<option value="none" selected disabled hidden>
+									Citizenship
+								</option>
+								<option value="South Africa">
+									South Africa
+								</option>
+								<option value="Swaziland">Swaziland</option>
+								<option value="Botswana">Botswana</option>
+								<option value="Mazambique">Mozambique</option>
+								<option value="Zimbabwe">Zimbabwe</option>
+								<option value="Malawi">Malawi</option>
+								<option value="Nigeria">Nigeria</option>
+								<option value="Ghana">Ghana</option>
+								<option value="Namibia">Namibia</option>
+								<option value="Kenya">Kenya</option>
+								<option value="USA">USA</option>
+								<option value="India">India</option>
+							</select>
+							<input type="text" placeholder="ID Number" />
+							<select id="bornAgain">
+								<option value="none" selected disabled hidden>
+									Are you born again
+								</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+							<input
+								type="text"
+								placeholder="if yes, How long?"
+							/>
+							<a href="#" onclick="toggleForm()"
+								><input
+									type="button"
+									value="Next"
+									style="cursor: pointer"
+							/></a>
+						</form>
+					</div>
+				</div>
+
+				<div class="user signupBx">
+					<div class="formBx">
+						<form>
+							<h2 class="text-center">Application Process</h2>
+							<h4 class="text-center">Church details</h4>
+							<input
+								type="text"
+								placeholder="Name of your church"
+							/>
+							<input
+								type="text"
+								placeholder="Position at church"
+							/>
+							<input
+								type="text"
+								placeholder="Estiamte total members of the church"
+							/>
+							<select id="ownerofchurch">
+								<option value="none" selected disabled hidden>
+									Are you owner of Church?
+								</option>
+								<option value="South Africa">
+									Yes, I am the owner
+								</option>
+								<option value="South Africa">
+									No, I am church member
+								</option>
+							</select>
+							<input
+								type="text"
+								placeholder="Where is the church located?"
+							/>
+							<input
+								type="text"
+								placeholder="How long have you been serving in that church?"
+							/>
+							<a
+								href="#"
+								onclick="toggleForm()"
+								style="cursor: pointer"
+								><input
+									type="button"
+									value="Previous"
+									style="cursor: pointer"
+							/></a>
+						</form>
+					</div>
+					<div class="imgBx">
+						<img
+							src="img/apply/apply1.jpg"
+							alt=""
+							class="img-fluid apImg1"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="js/applybiblestudy.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/fontawesome.min.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/spinner.js"></script>
+		<script src="js/top.js"></script>
+	</body>
+</html>

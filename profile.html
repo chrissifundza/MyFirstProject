@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title id="headtop">Profile | God's Purpose</title>
+	<link rel="shortcut icon" href="img/logo/logo1.png"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="Css/Up.css" /> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body onload="getPost()" style="background: rgb(151, 145, 145);">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-up"></i>Top</button>
+ 
+  <section class="section-profile">
+	<div class="menubar1 fixed-top">
+			
+		<div class="search-form col">
+			<input type="text" name="" placeholder="Search">
+			<div class="close-search"><i class="fas fa-times"></i></div>
+		</div>
+	
+	<a href="#"><img src="img/logo/logo1.png" alt=""></a>
+	<nav>
+		<ul>
+			<li><a href="#" class="active-home1 aa">Profile</a></li>
+			<li><a href="feed.html" class="aa">G-chats</a></li>
+			<li><a href="introVideo.html" class="aa">Digital-Library</a> </li>
+			<li><a href="introBook.html" class="aa">BookStore</a> </li>
+			<li><a href="applyIndex.html" class="aa">Applications</a>
+			</li>
+			<li><a href="#"class="aa">Partner-WithUs</a>
+			<ul>
+				<li><a href="#"  class="aa">OurMission</a></li>
+				<li><a href="#" class="aa">Partner-WithUs</a></li>
+				<li><a href="#" class="aa">Offerings</a></li>
+			</ul></li>
+			<li><a href="#" class="sear-icon aa sear-icon1"><i class="fas fa-search" aria-hidden="true"></i></a></li>
+
+		</ul>
+	</nav>
+	
+	<div class="menu-toggle">
+		<i class="fas fa-bars"></i>
+	</div>
+</div>
+
+<div class=" container-fluid col-12 cover-div">
+    <img class="cover-img img-fluid" src="img/cover4.jpg" alt="">
+	<button class="btn btn-md cover-button"><i class="fas fa-camera-retro"></i> Edit CoverPhoto</button>
+</div>
+<div class="col-12 followers" >
+	<ul class="ul navbar-nav ULitem nav-item ml-auto">
+		<li class="nav-item  mx-2"><h4 class="h4Followers">20 <span class="follow-span">followers</span></h4></li>
+		<li class="nav-item mx-2"><h4 class="h4Followers">08 <span class="follow-span">following</span></h4></li>
+		<li class="nav-item mx-2"><h4 class="h4Followers">08 <span class="follow-span">Likes</span></h4></li>
+	</ul>
+</div>
+<div class="col-md-4 prifile-image-div">
+	<img src="img/defaults/dfault.png" class="profile-image img-fluid" alt="" id="myprof">
+	<a href="" data-toggle="modal" data-target="#MyPpic" style="text-decoration: none; color: unset;"><i class="fas fa-camera change-pro-icon"></i></a>
+	<!-- 
+		<div class="hh4 text-center">
+		<h4 style="text-overflow: ellipsis !important;white-space: nowrap;overflow: hidden;">Kuyalunga Sifundza</h4>
+	</div>
+	-->
+</div>
+
+<div class="row content-div text-center">
+	<div class="col-md-4 content-div1 grid1 ">
+		<div class="col-12  text-left profile-det pb-2 profileDetails" style="background-color: rgb(236, 231, 231); font-family: Arial, Helvetica, sans-serif; font-weight: lighter !important; overflow: hidden;">
+			<div style="background-color:rgb(110, 107, 107); position: relative; top: 0; left: 0; width: 108%; border-top-right-radius: 2px; border-top-left-radius: 2px; margin-left: -4% !important;">
+			<i class="fas fa-edit  tooltip-test" title="Edit" data-toggle="modal" data-target="#profileDetailsEdit" style="box-shadow: -5px 5px 10px 0 rgba(212, 208, 208, 0.979);"></i>
+            <h4 class="lead p-1" style="font-weight: lighter; color: white;">Profile Details</h4>
+			<h5 class="  pl-1 pb-2" style="font-weight: lighter; color: white;">Personal Info</h5>
+			
+		</div>
+            <div class="col-12 pt-3">
+						<span class=" text-dark" ><span style="font-weight: normal;">Title:</span> </span><span id="Ptitle" ></span>
+					</div>
+					<div class="col-12 pt-2">
+					<span class=" text-dark"><span style="font-weight: normal;">Name: </span> </span><span id="Pname"></span>
+					</div>
+					<div class="col-12 pt-2">
+						<span class="text-dark"><i class="fas fa-phone-square" style="font-size: large;"></i><span style="font-weight: normal;">Cellphone: </span> </span><span id="PCell"></span>
+					</div>
+					<div class="col-12 pt-2">
+						<span  class="text-dark"><i class="fas fa-envelope"></i><span style="font-weight: normal;">Email: </span> </span><span id="Pemail"></span>
+				   </div> 
+					
+		
+		</div>
+
+		<div class="col-12  text-left profile-det profile-det3 p-2 mt-3" style=" font-family: Arial, Helvetica, sans-serif; font-weight: lighter !important; background-color: rgb(236, 231, 231);">
+			<div style="background-color:rgb(110, 107, 107); position: absolute; top: 0; left: 0; width: 100%; border-top-right-radius: 2px; border-top-left-radius: 2px;">
+			<i class="fas fa-edit tooltip-test" title="Edit" data-toggle="modal" data-target="#profileIntroductionEdit" style="box-shadow: -5px 5px 10px 0 rgba(212, 208, 208, 0.979);" ></i>
+			<h4 class="lead p-1" style="font-weight: lighter; color: white;">About You</h4>
+			<h5 class="lead pl-1 " style="font-weight: lighter; color: white;">Intro</h5>
+		</div>
+					<div class="col-12 pt-5 mt-5">
+						<span class="text-dark"><i class="fas fa-home"></i><span style="font-weight: normal;">Lives in: </span> </span ><span id="town"></span>
+					</div>
+					<div class="col-12 pt-3">
+					<span class="text-dark"><i class="fas fa-map-marker-alt"></i><span style="font-weight: normal;">Location: </span> </span><span id="subtown"></span>
+					</div>
+					<div class="col-12 pt-3">
+						<span class="text-dark"><i class="fas fa-university"></i><span style="font-weight: normal;">Studied at: </span> </span><span id="schoolattend"></span>
+					</div>
+					
+					<div class="col-12 pt-3">
+						<span class="text-dark"><i class="fas fa-graduation-cap"></i><span style="font-weight: normal;">Qualification: </span> </span><span id="qualification"></span>
+					</div>
+					<div class="col-12 pt-3 pb-2">
+						<span class="text-dark"><i class="fas fa-user-tag"></i> <span style="font-weight: normal;">About me: </span></span><span id="aboutme"></span>
+					</div>
+		</div>
+		<div class="col-12  text-left profile-det p-2 mt-3" style="background-color: rgb(236, 231, 231);">
+			
+					<h5 style="text-decoration: underline;">Media uploaded</h5>
+					<div class="col-12 pt-2 text-center">
+						
+						<span style="color: rgb(151, 95, 168); font-weight: bold; cursor: pointer;">Photos <span style="color: gray;">/</span> </span ><span style="color:rgb(141, 76, 161); font-weight: bold; cursor: pointer;"> Videos</span>
+					</div>
+		   
+		</div>
+
+	</div>
+	<div class="col-md-5 content-div1 grid2">
+		
+		<div class="row text-center profile-det" style="background-color:rgb(51, 51, 51)">
+		
+			<div class="profi  text-right">
+				<img src="img/defaults/dfault.png" class="image-profile-post"id="myprofPost">
+			  </div>
+			  
+		  <div class="col-9  text-left">
+			  <div class="name-post"  style="font-weight: lighter; color: white;">
+				<span id="namePost" > 
+					<div id="overlay">
+					<div class="spinner"></div>
+					</div>
+			</span>
+				<span id="surnamePost"></span>
+			</div>
+		  </div>
+		  <div class="mt-2" style="width:100%; background-color: rgb(236, 231, 231);backdrop-filter: blur(12px); box-shadow: -5px 5px 10px 0 rgba(212, 208, 208, 0.979);">			
+		  <div class="col-11  postDiv pb-2">
+			<textarea rows="3" cols="50"  class="text-posthere col-11 mt-3" placeholder="Whats on your mind?..." id="whatIPost"></textarea>
+			<div class="text-right">
+				<button class="btn btn-sm rounded-pill " onclick="Post()" style="background-color: rgb(51, 51, 51); color:gray; margin-right: 0.2rem; box-shadow: -5px 5px 10px 0 rgba(212, 208, 208, 0.979);">Post</button>
+			</div>
+		  </div>
+		  <div class="col-11 postDiv">
+		  <div class="col-11 icon-div border pt-2 pb-4">
+			<i class="far fa-image icon-post1 mx-4" data-toggle="modal" data-target="#exampleModalCenter3"></i><span style="margin-left: -1.3rem; cursor: pointer; " data-toggle="modal" data-target="#exampleModalCenter3">Photo</span>
+			<i class="fas fa-video icon-post  mx-4"></i><span style="margin-left: -1.3rem; cursor: pointer; ">Video</span>
+		  </div>
+		  </div>
+		</div>
+	</div>
+	<div id="main">
+		<div class="row text-center profile-det mt-3 border">
+			<div class="profi  text-right">
+				<img src="img/chris.jpeg" class="image-profile-post">
+			  </div>
+		  <div class="col-9  text-left">
+			  <div class="name-posted ">
+				<span>Kuyalunga</span>
+				<span>Sifundza</span> <br>
+				<span style="font-weight: lighter; font-size: smaller;">August 29 at 9.36 PM &bull; <i class="fas fa-globe-americas"></i></span>
+			</div>
+		  </div>
+		  
+		  <div class="col-11  postDiv mt-3 mb-4  text-left">
+			<div class="posted-image-div">
+				<img src="img/posted/PastorChris.jpg" alt="" class="posted-image">
+			</div>
+		</div>
+		  <div class="col-10 icon-div1 border pt-2 pb-2">
+			<span class="mx-4 icon-post2"><i class='bx bx-like' onclick="Liked()"></i> 40</span>
+			<span class="mx-4 icon-post2"><i class="far fa-comment-alt"></i> 1 Comment</span>
+			<span class="mx-4 icon-post2">Share <i class="fas fa-share"></i></span>
+		
+		  </div>
+		  <div class="col-10 text-left icon-div1 border pt-2 pb-4">
+			<span style="text-decoration: underline; cursor: pointer;">View Comments</span>
+		
+		  </div>
+		</div>
+		<div class="row text-center profile-det mt-3 border">
+			<div class="profi  text-right">
+				<img src="img/chris.jpeg" class="image-profile-post">
+			  </div>
+		  <div class="col-9  text-left">
+			  <div class="name-posted ">
+				<span>Kuyalunga</span>
+				<span>Sifundza</span> <br>
+				<span style="font-weight: lighter; font-size: smaller;">August 29 at 9.36 PM &bull; <i class="fas fa-globe-americas"></i></span>
+			</div>
+		  </div>
+		  
+		  <div class="col-11  postDiv mt-3 mb-4  text-left">
+			<span>Hey Brothers and Sisters, God is Good, Keep praying, 
+				He will answer you, He Always does!!</span>
+		  </div>
+		  <div class="col-10 icon-div1 border pt-2 pb-2">
+			<span class="mx-4 icon-post2"><i class='bx bx-like '></i>40</span>
+			<span class="mx-4 icon-post2"><i class="far fa-comment-alt"></i> 1 Comment</span>
+			<span class="mx-4 icon-post2">Share <i class="fas fa-share"></i></span>
+	
+		  </div>
+		  <div class="col-10 text-left icon-div1 border pt-2 pb-4">
+			<span style="text-decoration: underline; cursor: pointer;">View Comments</span>
+	
+		  </div>
+	</div>
+	</div>
+	
+
+	</div>
+	<div class="col-md-3 content-div1 grid3" >
+		<div class="col-12 text-center profile-det" style="background-color: rgb(236, 231, 231);">
+			<div style="background-color:rgb(110, 107, 107); position: relative; top: 0; left: 0; width: 111%; border-top-right-radius: 2px; border-top-left-radius: 2px; margin-left: -5.5% !important;">
+				<h4 class="lead p-1" style="font-weight: lighter; color: white;">Followers</h4>
+				<h6 class=" lead pl-1 pb-2" style="font-weight: lighter; color: white;"><a href="$"  style="box-shadow: -5px 5px 10px 0 rgba(212, 208, 208, 0.979); text-decoration: none; color: unset; border-radius: 5px;">&nbsp; Add<i class="fas fa-user-plus" ></i>&nbsp;</a>&nbsp;more followers</h6>
+		</div>
+			<div class="row  text-center follow-you-div border pb-1 mb-2" style="margin-top: 40px !important; box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4)">
+			
+				<div class=" mt- ml-2 profi1  text-left ">
+					<img src="img/followers/rhodesia.jpg" class="image-follow-you ">
+				  </div>
+			  <div class="col-9  text-left" >
+				  <div class="follow-you">
+					<span>Rhodesia</span>
+					<span>Sifundza</span>
+				</div>
+			  </div>
+			</div>
+		<div class="row text-center follow-you-div border pb-1 mb-2" style="box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4)">
+			
+			<div class=" ml-2 mt-1  profi1  text-left ">
+				<img src="img/followers/boufo.jpg" class="image-follow-you img-fluid">
+			  </div>
+		  <div class="col-9  text-left">
+			  <div class="follow-you">
+				<span>Boufo</span>
+				<span>Mdakane</span>
+			</div>
+		  </div>
+		</div>
+		<div class="row text-center follow-you-div border pb-1 mb-2" style="box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4)">
+			
+			<div class="  ml-2 mt-1  profi1  text-left">
+				<img src="img/followers/fanelo.jpg" class="image-follow-you img-fluid">
+			  </div>
+		  <div class="col-9  text-left ">
+			  <div class="follow-you">
+				<span>Fanelo</span>
+				<span>Maphosa</span>
+			</div>
+		  </div>
+		</div>
+		<div class="row text-center follow-you-div border pb-1 mb-2" style="box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4)">
+			
+			<div class=" ml-2 mt-1  profi1  text-left">
+				<img src="img/followers/kulungile.jpg" class="image-follow-you img-fluid">
+			  </div>
+		  <div class="col-9  text-left">
+			  <div class="follow-you">
+				<span>Kulungile</span>
+				<span>Sifundza</span>
+			</div>
+		  </div>
+		</div>
+		<div class="row text-center follow-you-div border pb-1 mb-2" style="box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4)">
+			
+			<div class=" ml-2 mt-1 profi1  text-left">
+				<img src="img/followers/Sfundza King.jpg" class="image-follow-you img-fluid">
+			  </div>
+		  <div class="col-9  text-left">
+			  <div class="follow-you">
+				<span>Sifundza</span>
+				<span>King</span>
+			</div>
+		  </div>
+		</div>
+	<div>&nbsp;</div>
+	</div>
+</div>
+
+<div class="container text-center " style="padding-top: 160px;">
+	
+  </section>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="MyPpic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog " role="document">
+	  <div class="modal-content">
+		<div class="text-right corner-close">
+		<button type="button" class="close close-bu" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="col-12 text-center ">
+			  <div class="col-md-4 col-lg-7  div-change" id="select">
+               <img src="img/defaults/dfault.png" alt="" class="change-profile1 img-fluid" id="myPicture">
+			  </div>
+			  <span>Change Profile</span><br>
+			  <span id="UpProgress"></span><br>
+			  <button type="button" class="btn mt-3 btn text-uppercase rounded-pill btn-md butt-style" id="change">Save Update</button>
+		  </div>
+		</div>
+		
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade" id="profileDetailsEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content" >
+		<div class="text-right corner-close">
+		<button type="button" class="close close-bu" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="modal-header text-center col-12 " >
+			<div class="text-center col-12 heading_mod  ">
+			<h5>Profile Details</h5>
+			</div>
+		</div>
+		<div class="col-10 mode-content text-center mb-4">
+			
+			<form id = "updateForm">
+				<div class="form-group">
+					<input type="text" id="fullname1" class="inputUpdating"style="border-color: #cfb53b;" >
+				</div>
+				<div class="form-group">
+					<input type="text" id="surname1" class="inputUpdating"style="border-color: #cfb53b;" >
+				</div>
+				<div class="row form-group">
+					<div class="col" style="margin-left: -1rem !important;" >
+						<select id="Title1" class="inputUpdating" style="border-color: #cfb53b;">
+							<option value="none" selected disabled hidden>Title</option>
+							<option value="Mr">Mr</option>
+							<option value="Miss">Miss</option>
+							<option value="Mrs">Mrs</option>
+							<option value="Pastor">Pastor</option>
+							<option value="Doc">Doctor</option>
+						</select>                    
+					</div>
+					<div class="col" style="margin-right: -1rem !important;">
+						<input type="text" id="cellnumber1" class="inputUpdating"style="border-color: #cfb53b;" >                   
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="email" id="Email1" class="inputUpdating" style="border-color: #cfb53b;" >
+				</div>
+			   
+				<button  class="btn mt-3 btn text-uppercase rounded-pill btn-md butt-style" >Update</button>
+			</form>	
+			</div>
+		
+		  </div>
+		</div>
+		
+	  </div>
+	</div>
+
+	
+	<div class="modal fade" id="profileIntroductionEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="text-right corner-close">
+			<button type="button" class="close close-bu" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<div class=" col-12 modal-header text-center">
+				<div class="col-12">
+				<h5>Introduction Details</h5>
+				</div>
+			</div>
+			<div class="col-10 mode-content text-center mb-4">
+				
+				<form id = "updateForm2">
+					<div class="form-group">
+						<input type="text" id="liveIn" class="inputUpdating pt-1"style="border-color: #cfb53b;" value="" placeholder="Town you live in">
+					</div>
+					<div class="form-group">
+						<input type="text" id="location" class="inputUpdating"style="border-color: #cfb53b;" value=""  placeholder="Place Name">
+					</div>
+					
+					<div class="form-group">
+						<input type="text" id="studyAt" class="inputUpdating" style="border-color: #cfb53b;" placeholder="School or University attended" >
+					</div>
+
+					<div class="form-group">
+						<input type="text" id="qualification1" class="inputUpdating" style="border-color: #cfb53b;" placeholder="Name of highest Qualification" >
+					</div>
+
+					<textarea rows="3" id="aboutme1" cols="50"  class="text-posthere1 col-12" placeholder="Describe your self in short (1 - 3 lines)"></textarea>
+				   
+					<button  class="btn mt-3 btn text-uppercase rounded-pill btn-md butt-style">Update</button>
+				</form>
+				</div>
+			</div>
+					
+			  </div>
+			</div>
+			
+		  </div>
+		  <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade"  id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered col-12" role="document">
+		<div class="modal-content">
+			<div class="text-right corner-close">
+			<button type="button" class="close close-bu" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			
+			<div class="col-11 mode-content1 text-center mb-4">
+						<div class="row text-center  myP ">
+									<div class="profi  text-right">
+										<img src="img/chris.jpeg" class="image-profile-post">
+									</div>
+								<div class="col-9  text-left">
+									<div class="name-posted ">
+										<span>Kuyalunga</span>
+										<span>Sifundza</span> <br>
+										<span style="font-weight: lighter; font-size: smaller;">Public &bull; <i class="fas fa-globe-americas"></i></span>
+									</div>
+								</div>
+						</div>
+						<div class=" pt-2">
+							<input  class="inputUpdating1" placeholder="Whats on your mind?" id="myMind2"/>
+						</div>
+						
+						<div class="posted-image-div1 pt-3" id="select2">
+							<img src="img/defaults/postVidPhoto.jpeg" alt="" class="posted-image" id="myPicture2">
+							<div class="selectIcon"> 
+							<i class="far fa-image icon-post1 mx-4" ></i><span style="margin-left: -1.3rem; cursor: pointer;" >Click to Select Photo</span>
+							<span id="UpProgress2"></span><br>
+							</div>
+						</div>
+						
+				<button  class="btn mt-3 btn text-uppercase  btn-md butt-style w-100" id="change2">Post</button>
+				
+			</div>
+			</div>
+					
+		 </div>
+  </div>
+</div>
+</div>
+  	
+
+<div class="socket text-light text-center py-3">
+  <p>&copy; &nbsp;<script> document.write(new Date().getFullYear()); </script><a href=""target="_blank" style="text-decoration: none; color: white;">&nbsp;www.Godspurpose.co.za</a> | All Rights Reserved</p>
+</div>
+ 
+
+	
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAClAhXNEZbmaqFbW6brFeuTmX-T3lDH7Q",
+    authDomain: "global-church-b9d22.firebaseapp.com",
+    projectId: "global-church-b9d22",
+    storageBucket: "global-church-b9d22.appspot.com",
+    messagingSenderId: "906707524519",
+    appId: "1:906707524519:web:62c0d179d741e798e67482",
+    measurementId: "G-SGBEBKBRQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true})
+  firebase.analytics();
+
+</script>
+
+	<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+	<script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/posts.js"></script>
+	<script src="js/spinner.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.17/mediaelement-and-player.min.js" integrity="sha512-hLCA6qoEOSjwOEIc6xi7p0g6/uW2SAqS7gGZIxfN4jYabdJVsW7ANuUeih/vRrU3nGpf9cnsadaC+W3qoDqIQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/all.min.js"></script>
+	<script src="js/top.js"></script>
+	
+</body>
+</html>

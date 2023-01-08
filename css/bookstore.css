@@ -1,0 +1,36 @@
+.container-advert-book {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	padding-top: 8rem !important;
+}
+.book-advert {
+	position: relative;
+	width: 180px;
+	height: 250px;
+	/*box-shadow: 0 0.2rem 0.5rem rgb(247, 245, 245);*/
+	transform-style: preserve-3d;
+	transform: rotateY(35deg);
+	transition: 1.2s;
+}
+.book-advert:hover {
+	transform: rotateY(90deg);
+	transition: 1.2s;
+}
+.book-advert:before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 250px;
+	transform-origin: left;
+	background: url(../img/book/side.png);
+	background-position: center;
+	transform: rotateY(90deg);
+}
+
+.book-advert img {
+	width: 180px;
+	height: 250px;
+}

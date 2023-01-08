@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home | God's Purpose</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/logo/logo1.png"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="Css/Up.css" /> 
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/tiltedpage-scroll.css">
+	<link rel="stylesheet" href="css/book.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/jquery.tiltedpage-scroll.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+</head>
+<body class="bg">
+	<div class="main">
+		<div id="overlay">
+			<div class="spinner"></div>
+		</div>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-up"></i>Top</button>
+		<div class="menubar fixed-top">
+			
+				<div class="search-form col">
+					<input type="text" name="" placeholder="Search">
+					<div class="close-search"><i class="fas fa-times"></i></div>
+				</div>
+			
+			<a href="#"><img src="img/logo/logo1.png" alt=""></a>
+			<nav>
+				<ul>
+					<li><a href="#" class="active-home">Home</a></li>
+					<li><a href="#">Digital-Library</a>
+					<ul>
+						<li><a href="#library">Digital-Library</a> </li>
+						<li><a href="#testimonies">Testimonies</a></li>
+						<li><a href="#bookstore-location">BookStore</a> </li>
+						<li><a href="#aboutus">G-chats</a></li>
+						
+					</ul></li>
+
+					
+					<li><a href="#">Applications</a>
+					<ul>
+						<li><a href="#">Online-Application</a></li>
+						<li><a href="#">Check-Status</a></li>
+						<li><a href="#">Contact-Details</a></li>
+					</ul></li>
+					
+					<li><a href="#" onclick="togglePopup()">Login</a></li>
+					<li><a href="#"onclick="togglePopupR()">Register</a></li>
+					<li><a href="#">AboutUs</a>
+					<ul>
+						<li><a href="#">OurMission</a></li>
+						<li><a href="#">Partner-WithUs</a></li>
+						<li><a href="#">Offerings</a></li>
+					</ul></li>
+					<li><a href="#" class="sear-icon"><i class="fas fa-search" aria-hidden="true"></i></a></li>
+
+				</ul>
+			</nav>
+			
+			<div class="menu-toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+<!--  <nav class="navbar fixed-top col-lg-12 bg-light navbar-light navbar-expand-lg nav justify-content-center"  >
+	<div class="text-left" >
+		<ul class="ul navbar-nav ml-auto">
+			<li class="nav-item" ><a href="#"><img src="img/logo/logo1.png" alt=""  style="width: 5rem!important; height: 5rem!important; cursor: pointer;"></a> </li>
+			<li class="nav-item font " ><a href="#" class="nav-link" style="text-decoration: none; "><h4  class="font-weight-bold"style="font-size: 1.8rem !important; padding-top: 1rem!important; cursor: pointer;">GOD'S&nbsp;PURPOSE</h4></a></li>
+	</ul>
+	</div>
+	
+
+	<button  class="navbar-toggler" type ="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"> </span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		
+		<ul class="ul navbar-nav ml-auto">
+			<li class="nav-item active"><a href="#" class="nav-link btn btn-link btn-outline rounded-pill font-weight-bold " >Home</a></li>
+			<li class="nav-item dropdown"><a href="#" class="nav-link  dropdown-toggle btn btn-link  btn-outline font-weight-bold rounded-pill " data-bs-toggle="dropdown" >DigitalLibray</a>
+				<ul class="dropdown-menu">
+					<li ><a class="dropdown-item" href="#library">DigitalLibrary</a></li>
+					<li ><a class="dropdown-item" href="#bookstore-location">BookStore</a></li>
+					
+				  </ul>
+			</li>
+			<li class="nav-item"><a href="#testimonies" class="nav-link btn btn-link btn-outline rounded-pill font-weight-bold " >Testimonies</a></li>
+			<li class="nav-item"><a href="#" class="nav-link btn btn-link  btn-outline font-weight-bold rounded-pill " >G-Chats</a></li>
+			<li class="nav-item"><a href="#aboutus" class="nav-link btn btn-link  btn-outline font-weight-bold rounded-pill " >AboutUs</a></li>
+			<li class="nav-item"><a href="#" class="nav-link btn btn-link  btn-outline font-weight-bold rounded-pill text-decoration-underline active" onclick="togglePopup()" >Login</a></li>
+			<li class="nav-item"><a href="#" class="nav-link btn btn-link  btn-outline font-weight-bold rounded-pill active " onclick="togglePopupR()" >Register</a></li>
+			<li class="nav-item dropdown" ><a href="#" class="nav-link dropdown-toggle "  data-bs-toggle="dropdown">More</a>
+				<ul class="dropdown-menu" style="margin-left: -6rem !important;">
+					<li class="nav-item"><a class="dropdown-item" href="#">PartnerWithUs</a></li>
+					<li class="nav-item"><a class="dropdown-item" href="#">Offerings</a></li>
+					<li class="nav-item"><a class="dropdown-item" href="#" >FAQ</a></li>
+				  </ul>
+			</li>
+			
+		
+		</ul>
+	</div>
+
+	<div class="drops ">
+							<div class="drop drop-1"></div>
+							<div class="drop drop-2"></div>
+							<div class="drop drop-3"></div>
+							<div class="drop drop-4"></div>
+							<div class="drop drop-5"></div>
+							<div class="drop drop-6"></div>
+							<div class="drop drop-7"></div>
+							<div class="drop drop-8"></div>
+						</div>
+</nav> -->
+
+	<!-- End Navigation -->
+
+	<div>
+<div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    
+                      
+                      <form id ="login" class=" content login_wrapper text-center col-12 col-md-6 col-sm-4 popup">
+                        <div class="close-btn" onclick="togglePopup()">×</div>
+                        <h3 class="mb-3">Welcome Back</h3>
+                        <h6 class="mb-3">Enter Your Details below</h6>
+    
+                        <div class="form-group">
+                            <input type="email" id="Email" class="form-control rounded-pill form-control-md"style="border-color: #cfb53b!important;" placeholder="Your Email">
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="password" id="Password" class="form-control rounded-pill form-control-md"style="border-color: #cfb53b!important;" placeholder="Password">
+                        </div>
+    
+                        <div class="forgot-link d-flex align-items-center justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" style="background-color: #e41cd6!important;"class="form-check-input" id="remember">
+                                <label for="remember">Remember Password</label>
+                            </div>
+                            <a href="forgot.html" style="color:#db82d5">forgot Password?</a>
+                        </div>
+    
+                        <button class="btn mt-3 text-uppercase rounded-pill btn-md butt-style">Login</button>
+
+						
+                        </form>
+						
+                       
+                          
+                       
+                    
+</div>
+                  <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+					
+					
+                  <form id = "sign" class="content popup reg login_wrapper text-center col-12 col-md-6 col-sm-4" style="padding-bottom: -5rem; margin-top: 3rem;">
+                    <div class="close-btn" onclick="togglePopupR()">×</div>
+					<h3 class="mb-3">Please Register</h3>
+                    <h6>Enter Your Details below</h6>
+
+                    <p id="error"></p>
+					<div class="form-group">
+                        <input type="text" id="fullname" class="form-control rounded-pill form-control-md" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="surname" class="form-control rounded-pill form-control-md" placeholder="Surname">
+                    </div>
+					<div class="row form-group">
+                        <div class="col" style="margin-left: -1rem !important;" >
+                            <select id="Title" class="form-control rounded-pill form-control-md selectTitle" >
+                                <option value="none" selected disabled hidden>Title</option>
+                                <option value="Mr" style="background-color: black !important;">Mr</option>
+								<option value="Miss"  style="background-color: black !important;">Miss</option>
+                                <option value="Mrs"  style="background-color: black !important;">Mrs</option>
+								<option value="Pastor"  style="background-color: black !important;">Pastor</option>
+                                <option value="Doc"  style="background-color: black !important;">Doctor</option>
+                            </select>                    
+                        </div>
+                        <div class="col" style="margin-right: -1rem !important;">
+                            <input type="text" id="cellnumber" class="form-control rounded-pill form-control-md" placeholder="Cellphone">                   
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="Email" class="form-control rounded-pill form-control-md"  placeholder="Email">
+                    </div>
+                   
+
+                    <div class="form-group">
+                        <input type="password" id="Password" class="form-control rounded-pill  form-control-md-4 col-12"   placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="confPassword" class="form-control rounded-pill form-control-md-4 col-12"  placeholder="Confirm Password">
+                    </div>
+
+                    <button  class="btn mt-3 btn text-uppercase rounded-pill btn-md butt-style">Sign Up</button>
+                    
+                </form> 
+             </div>  
+
+			 
+
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000" style="height: fit-content; ">
+
+		<!-- Carousel Content -->
+	<div class="carousel-inner">
+		<div class="carousel-item active slide1image">
+			<div class="">
+			<img src="img/carousel/slide0.jpg" alt="" class="w-100">
+		</div>
+			<div id="caption"class="carousel-caption carousel-caption1">
+				<div class="container">
+					<div class="row justify-content">
+						<div class="col-8 bg-custom py-3 px-0">
+							<h3>Welcome to</h3>
+							<div class="border-top  w-50 mx-auto my-3" style="border-color: #e41cd6 !important;"></div>
+							<h2 class="font-weight-bold">God's Purpose Global Church</h2>
+							<a href="#" class="logcaption" onclick="togglePopup()"  >LogIn</a>
+							<a href="#" class="btn  btn-md" onclick="togglePopupR()" style="background-color: #cfb53b;">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	   </div>
+
+	   <div class="carousel-item">
+		<img src="img/carousel/slide2.jpg"  alt="" class="w-100">
+		<div class="carousel-caption ">
+			<div class="container">
+				<div class="row justify-content">
+					<div class="col-8 bg-custom py-3 px-0">
+						<h2 class="font-weight-bold">APPLY FOR BIBLE STUDY</h2>
+						<div class="border-top w-50 mx-auto my-3" style="border-color: #e41cd6 !important;"></div>
+						<h4>GET ARMED</h4>
+						<a href="#" class="btn logcaption btn-md" onclick="togglePopup()" >APPLY</a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+   	   </div>
+
+		  <div class="carousel-item">
+			<img src="img/carousel/slide1.jpg" alt="" class="w-100" >
+			<div class="carousel-caption carousel-caption3">
+				<div class="container">
+					<div class="row justify-content">
+						<div class="col-8 bg-custom py-3 px-0">
+							<h2 class="font-weight-bold">JOIN OUR MEETINGS WITH</h2>
+							<div class="border-top  w-50 mx-auto my-3" style="border-color: #e41cd6 !important;"></div>
+							<h4>PASTOR MDUDUZI</h4>
+							<a href="#" class="btn logcaption btn-md" onclick="togglePopup()" >GET STARTED</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	   </div>
+		<!-- End Carousel Content -->
+
+	
+		<!-- Previous & Next Buttons -->
+	<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+	<span class="fas fa-chevron-left fa-2x" style="color:black"></span>
+
+	</a>
+
+	<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+	<span class="fas fa-chevron-right fa-2x" style="color:black"></span>
+
+	</a>
+		<!-- End Previous & Next Buttons -->
+
+  </div>
+  <div id="library"></div>
+</div>
+<div class="col-11 container-digital" >
+	
+	<!-- End Image Carousel -->
+	<div class="col-12 text-center mt-5 pt-5 reveal" >
+		<h1 class="text-white pt-4 font-weight-bold Ourh1" data-aos=fade-up>Our Digital Library</h1>
+		<div class="border-top  w-50 mx-auto my-3 pt-2" style="border-color: #cfb53b!important;"></div>
+		<p class="lead">Giving Your Life A Meaning</p>
+	</div>
+	
+	<!-- Main Page Heading -->
+	<div class="row reveal">
+	<div class="container-imageD  text-center " >
+		<div class="inside-images text-center">
+			
+				<img src="img/pastor Chris.jpg" class="img-fluid eachOne" alt="">
+		
+			
+				<img src="img/sinanch.jpg" class="img-fluid eachOne" alt="">
+			
+				
+				<img src="img/profile3.jpg" class="img-fluid eachOne" alt="">
+			
+				
+				<img src="img/ur Flames.jpg" class="img-fluid eachOne"  alt="">
+			
+				
+				<img src="img/prophet.jpg" class="img-fluid eachOne" alt="">
+			
+				
+				<img src="img/martin.jpg" class="img-fluid eachOne" alt="">
+			
+		</div>
+	</div>
+	<div class="col-md-3 Digdes">
+		<h1 class="text-dark  mb-3" style="color: #d48acf !important;">"Start Watching"</h1>
+		<p class="mb-4">In one sense, you are always living in God's purpose. ... Nothing can happen without God ordaining it. 
+		Psalm 57:2 says, “I cry out to God Most High, to God who fulfills his purpose for me.” This is key in 
+		.
+		</p>
+	</div>
+</div>
+	<div id="testimonies"></div>
+</div>
+	
+
+	<!-- Three Column Section -->
+	<div class="testimony-container">
+	<div id="testimonies" class="col-12 text-left pt-5 reveal">
+<h3 class="text-dark  font-weight-bold">Hear from others..</h3>
+<p>"Watch or Read peoples Testimonies"</p>
+	</div>
+    <div  class="container reveal col-11" style="background-color: #f8f7f5;border-radius: 5px; box-shadow: 0.5rem 0.5rem; margin-top: -30px;">
+		<div class=" row my-5">
+			<div class="col-md-4 my-4 testimony text-center">
+             	<img src="img/1.jpg" alt="" class="w-100" style="border-radius: 5px;">
+			 	<h4 class="my-2">"Amazing Testimony"</h4>
+			 	<p>No matter what happens I know my mom is
+				 always warching over me. If Im sick, she 
+			 	</p>
+				 <div class="col-12 text-center">
+			 	<a href="" class="btn-outline-secondary btn md our" style="border-color:#d4a1d1!important;"> Show more</a>
+			</div>
+			</div>
+
+			<div class="col-md-4 my-4 testimony text-center">
+				<img src="img/2.jpg" alt="" class="w-100" style="border-radius: 5px;">
+				<h4 class="my-2">"Amazing Testimony"</h4>
+				<p>No matter what happens I know my mom is
+					always warching over me. If Im sick, she 
+				</p>
+				<div class="col-12 text-center">
+				<a href="" class="btn-outline-secondary btn md our" style="border-color:#d4a1d1!important;"> Show more</a>
+			</div>
+			</div>
+
+			<div class="col-md-4 my-4 testimony text-center">
+				<img src="img/3.jpg" alt="" class="w-100" style="border-radius: 5px;">
+				<h4 class="my-2">"Amazing Testimony"</h4>
+				<p>No matter what happens I know my mom is
+					always warching over me. If Im sick, she 
+				</p>
+				<div class="col-12 text-center">
+				<a href="" class="btn-outline-secondary btn md our " style="border-color:#d4a1d1!important;"> Show more</a>
+			</div>
+			 </div>
+		</div>
+		
+
+	
+</div>
+</div>
+<div class="fixed-background">
+
+	<div class="row text-light ">
+		<div class="col-12">
+			
+				<h2 class="reveal" style="text-align: left;">Invest Your Time In Prayer</h2>
+				<h4 class="py-4 reveal"style="text-align: right;">.....God will answer</h4>
+				
+				
+			
+			
+		</div>
+	</div>
+	<div class="fixed-wrap">
+		<div class="fixed">
+
+		</div>
+	</div>
+	
+</div>
+<div id="bookstore-location" class="pt-2"></div>
+<div class=" col-11 container-digital my-5 "style=" box-shadow: 0 .0rem .0rem rgba(0, 0, 0, .9);" >
+	<div class="row">
+		<div class="col-md-5 col-lg-6 container-book mt-4 reveal">
+			<div class="content-book ">
+				<ul>
+					<li>
+						<div class="book ">
+							<ul class="front">
+								<li>
+									<div class="frontcover" >
+										<p class="title-book">GODS PURPOSE BOOK STORE</p>
+										<h5 class="heading-book">Shape Your <br> life </h5>
+										<p class="sub-title">Build your Own Wealth <br><span style=" color: rgb(230, 66, 66);font-weight: bold; text-decoration: underline;">Click Here</span> </p>
+										<div class="book-icon">
+											<img src="img/logo/logo1.png" alt=""> 
+										</div>
+										<div class="writer">
+											<img src="img/profile.jpg" alt="">
+											<p>
+												<i style="margin-left: -1.5rem; font-size: 11px;">Brought by</i><br> Pastor Mduduzi
+											</p>
+										</div>
+										<p class="copyright">&copy;&nbsp; Copyright 2020</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+							<ul class="page">
+								<li></li>
+								<li ><a href="#" class="btnBook">Register
+								</a></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class="back-page">
+								<li ></li>
+								<li></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="col-12 text-center mt-5 pt-5 reveal" >
+				<h1 class="text-white pt-4 font-weight-bold Ourh1" data-aos=fade-up>Our Bookstore</h1>
+				<div class="border-top  w-100 mx-auto my-3 pt-2" style="border-color: #cfb53b!important;"></div>
+				<p class="lead">Englighten Your Spirit </p>
+			</div>
+		</div>
+		<div  class=" row py-4  pt-1 mt-1" style="padding-top: 90px !important;" >
+			<div class="col-lg-5 mb-4 my-lg-auto">
+				<div class="border-top  w-100 mx-auto my-3 pt-2" style="border-color: #cfb53b!important;"></div>
+				<p class="mb-4 ">In one sense, you are always living in God's purpose. ... Nothing can happen without God ordaining it. 
+				Psalm 57:2 says, “I cry out to God Most High, to God who fulfills his purpose for me.” This is key in 
+				.
+				</p>
+				<div id="aboutus"></div>
+			</div>
+			<!--<div class="col-lg-7 mb-4 text-center ">
+				<div class="container-advert-book">
+				<div class="book-advert">
+					<img src="img/book/front.jpg" alt="">
+				</div>
+			</div>
+				<p class="mt-4" style="color: white;">Available Now!! in Our |<span style="color: #cfb53b; font-weight: bolder;"> BOOKSTORE</span> | </p>
+			</div>-->
+		
+	</div>
+	
+	</div>
+	
+	
+</div>
+	<!-- End Two Column Section -->
+
+
+	<!-- Start Jumbotron -->
+<div class="jumbotron py-5 mb-0 jum " >
+	<div class="container reveal" style="color: #d4a1d1!important;text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);">
+		<div class="row">
+			<div class="col-md-7 col-lg-8 col-xl-12 my-auto text-center reveal">
+			<h3>Our Mission Statement and Key Partners</h3>
+			</div>
+		</div>
+			<div class="border-top  w-50 mx-auto my-3"></div>
+				<div class="row ">
+					<div class="col-md-7 col-lg-8 col-xl-12 my-auto text-center">
+					<h4 class="lead "style="">Our Mission Statement </h4>
+					<h6 class="lead ">In one sense, you are always living in God's purpose. ... Nothing can happen without God ordaining it. 
+					Psalm 57:2 says, “I cry out to God Most High, to God who fulfills his purpose for me.” This is key in 
+					understanding God's purpose for your life. God has numbered your days and will fulfill every purpose He has for you.</h6> 
+					</div>
+				</div>
+			
+		<div class="row">
+			
+			<div class="col-md-4 my-4 border" style="color: #d4a1d1!important; border-radius: 5px;">
+		
+			<h4 class="lead my-3">Physical Address</h4>
+			<h6>Stand no. 456<br>
+				Barberton <br>
+				Opposite Tvet Collage
+			</h6>
+
+			<h4 class="lead my-3">Posta Address</h4>
+			<h6>P O Box 456<br>
+				Barberton <br>
+				1245
+			</h6>
+
+			<h4 class="lead my-3">Or</h4>
+			<h6>Call tell: 011 245 9634<br>
+				
+				<p style="font-size: small;">Email: Godspurpose.globalchurch@gmail.com </p>
+				
+			</h6>
+			</div>
+			<div class="col-md-7 my-4 text-center border p-3" style="color: white!important;margin: 40px; border-radius: 5px;">
+				
+					<h4 class="lead my-4">Contact Us For Prayer</h4>
+					<form action="">
+						<p id="error"></p>
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control  form-control-md"style="border-color: #cfb53b;" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="Email" class="form-control  form-control-md" style="border-color: #cfb53b;" placeholder="Email">
+                    </div>
+                   
+
+                    <div class="form-group">
+                        <textarea id="Password"class="form-control  form-control-md-4 col-12" style="border-color: #cfb53b; height: 7rem!important;"  placeholder="Password"> </textarea>
+                    </div>
+
+					<button type="button" class="btn mt-3 btn text-uppercase rounded-pill btn-md butt-style">Submit</button>
+
+					</form>
+						
+				
+			</div>
+
+			
+		</div>		   	   
+	
+</div>
+
+	<!-- End Jumbotron -->
+
+</section>
+	<!-- Start Footer -->
+	
+	<!-- End Footer -->
+
+
+	<!-- Start Socket -->
+
+
+</div>
+</div>
+</div>
+<footer class="col-12">
+	
+	<div class="row text-light text-center py-4 justify-content-center " >
+		<div class="col-sm-12 col-md-8 col-lg-6">
+			<h2 class="font-weight-bold">God's Purpose</h2>
+			<p>In one sense, you are always living in God's purpose. ... Nothing can happen without God ordaining it. 
+			  Psalm 57:2 says, “I cry out to God Most High, to God who fulfills his purpose for me.” This is key in 
+			  understanding God's purpose for your life. God has numbered your days and will fulfill every purpose He has for you.</p>
+
+				<ul class="social pt-3">
+					<li><a href=""target="blank" style="color: white;"><i class="fab fa-facebook"></i></a></li>
+					<li><a href=""target="blank"style="color: white;"><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""target="blank"style="color: white;"><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""target="blank"style="color: white;"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+		</div>
+
+	</div>
+
+
+</footer>
+<div class="socket text-light text-center py-3">
+	<p>&copy; &nbsp;<script> document.write(new Date().getFullYear()); </script><a href=""target="_blank" style="text-decoration: none; color: white;">&nbsp;www.Godspurpose.co.za</a> | All Rights Reserved</p>
+</div>
+	<!-- End Socket -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAClAhXNEZbmaqFbW6brFeuTmX-T3lDH7Q",
+    authDomain: "global-church-b9d22.firebaseapp.com",
+    projectId: "global-church-b9d22",
+    storageBucket: "global-church-b9d22.appspot.com",
+    messagingSenderId: "906707524519",
+    appId: "1:906707524519:web:62c0d179d741e798e67482",
+    measurementId: "G-SGBEBKBRQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true})
+  firebase.analytics();
+
+  $(".main").tiltedpage_scroll({
+	sectionContainer: "> section", // In case you don't want to use <section> tag, you can define your won CSS selector here
+	angle: 50, // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+	opacity: true, // You can toggle the opacity effect with this option. The default value is true
+	scale: true, // You can toggle the scaling effect here as well. The default value is true.
+	outAnimation: true, // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+});
+</script>
+
+
+	<!-- Script Source Files -->
+	<script src="js/javascript.js"></script>
+	<script src="js/spinner.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/all.min.js"></script>
+	<script src="js/top.js"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>

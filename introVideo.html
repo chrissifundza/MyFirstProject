@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title id="headtop">Digital Library | God's Purpose</title>
+	<link rel="shortcut icon" href="img/logo/logo1.png"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Css/Up.css" /> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/introVid.css">
+</head>
+<body >
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-up"></i>Top</button>
+ 
+  <section class="section-profile1">
+		<nav class="navbar fixed-top col-lg-12 bg-light navbar-light navbar-expand-lg nav justify-content-center" style="padding-left: 1rem; padding-right: 0rem; z-index: 3;">
+			<div class="text-left" style="display: inline-block;" >
+				<ul class="ul navbar-nav ml-auto text-center">
+					<li class="nav-item" ><img src="img/logo/logo1.png" alt=""  style="width: 3rem!important; height: 3rem!important;"> </li>
+					<div class="collapse navbar-collapse text-center" id="navbarResponsive">
+					<li class="nav-item" ><a href="home.html" class="nav-link text-uppercase" style="font-size: 25px; ">God's&nbsp;Purpose</a> </li>
+			</ul>  </div>
+			</div>
+			
+	<button  class="navbar-toggler" type ="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"> </span>
+	</button>
+
+	<div class="collapse navbar-collapse text-center" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            
+            <ul class="ul navbar-nav  ml-auto">
+                <li class="nav-item"><a href="profile.html" class="nav-link ">Profile</a></li>
+                <li class="nav-item"><a href="feed.html" class="nav-link">G-Chats</a></li>
+				<li class="nav-item"><a href="introVideo.html" class="nav-link active">DigitalLibrary</a></li>
+                <li class="nav-item"><a href="introBook.html" class="nav-link">BookStore</a></li>
+                <li class="nav-item dropdown" ><a href="#" class="nav-link dropdown-toggle "  data-bs-toggle="dropdown">More</a>
+					<ul class="dropdown-menu"  style="margin-left: -6rem !important;">
+						<li class="nav-item"><a class="dropdown-item" href="#">PartnerWithUs</a></li>
+						<li class="nav-item"><a class="dropdown-item" href="#">Offerings</a></li>
+						<li class="nav-item"><a class="dropdown-item" href="#" id="logout_profiletop"> Log Out</a></li>
+					  </ul>
+				</li>
+                
+            
+            </ul>
+        </div>
+		
+	</div>
+		</nav>
+
+
+        <div class="row aniD">
+            <div class="container-imageD  text-center " >
+                <div class="inside-images text-center"  style="top: 70px;">
+                    
+                        <img src="img/pastor Chris.jpg" class="img-fluid eachOne" alt="">
+                
+                    
+                        <img src="img/sinanch.jpg" class="img-fluid eachOne" alt="">
+                    
+                        
+                        <img src="img/profile3.jpg" class="img-fluid eachOne" alt="">
+                    
+                        
+                        <img src="img/ur Flames.jpg" class="img-fluid eachOne"  alt="">
+                    
+                        
+                        <img src="img/prophet.jpg" class="img-fluid eachOne" alt="">
+                    
+                        
+                        <img src="img/martin.jpg" class="img-fluid eachOne" alt="">
+                    
+                </div>
+            </div>
+            <div class="col-md-3 Digdes text-center" style="top: 70px;">
+                <h1 class="text-dark  mb-3 mt-5" style="color: #d48acf !important; margin-top: 80PX !important;"> <br> <br><span style="color: #cfb53b; font-weight: bolder; ">Digital Library</span> </h1>
+				<div class="border-top  w-100 mx-auto my-3 pt-2" style="border-color: #cfb53b!important;"></div>
+               <div class="get-started">
+                <a href="digitallibrary.html">
+                    <span>Get started</span>
+                </a>
+            </div>
+           
+        </div>
+            
+        </div>
+
+  </section>
+
+  
+ 
+<div class="socket text-light text-center py-3">
+  <p>&copy; &nbsp;<script> document.write(new Date().getFullYear()); </script><a href=""target="_blank" style="text-decoration: none; color: white;">&nbsp;www.Godspurpose.co.za</a> | All Rights Reserved</p>
+</div>
+ 
+
+	
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAClAhXNEZbmaqFbW6brFeuTmX-T3lDH7Q",
+    authDomain: "global-church-b9d22.firebaseapp.com",
+    projectId: "global-church-b9d22",
+    storageBucket: "global-church-b9d22.appspot.com",
+    messagingSenderId: "906707524519",
+    appId: "1:906707524519:web:62c0d179d741e798e67482",
+    measurementId: "G-SGBEBKBRQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true})
+  firebase.analytics();
+
+</script>
+
+	<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+	<script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/posts.js"></script>
+	<script src="js/spinner.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.17/mediaelement-and-player.min.js" integrity="sha512-hLCA6qoEOSjwOEIc6xi7p0g6/uW2SAqS7gGZIxfN4jYabdJVsW7ANuUeih/vRrU3nGpf9cnsadaC+W3qoDqIQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/all.min.js"></script>
+	<script src="js/top.js"></script>
+	
+</body>
+</html>

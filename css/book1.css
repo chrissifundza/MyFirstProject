@@ -1,0 +1,112 @@
+.container-book ul {
+	list-style: none;
+}
+.container-book a {
+	text-decoration: none !important;
+	color: rgb(90, 88, 88);
+}
+.container-book {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5% !important;
+	margin-left: 100px;
+	text-align: center;
+}
+.book {
+	position: relative;
+	width: 190px;
+	height: 270px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+.book-icon img {
+	width: 30px;
+	height: auto;
+	margin-top: 1px;
+}
+.writer img {
+	float: left;
+	width: 30px;
+	height: auto;
+	margin-top: 5px;
+	border-radius: 50%;
+	margin-left: 0.5rem;
+}
+.title-book {
+	font-size: 13px;
+	font-weight: bolder;
+	padding-top: 20px;
+}
+.heading-book {
+	margin-top: -15px;
+	color: #fff;
+}
+.sub-title {
+	margin-top: 10px;
+	font-size: 12px;
+}
+.copyright {
+	font-size: 10px;
+	margin-top: -20px;
+}
+.front li {
+	background-color: white;
+	border-radius: 10px;
+}
+.back-page li {
+	background: linear-gradient(
+		to bottom,
+		#dbdb5c,
+		#d4d428,
+		#e2e268,
+		#bdbd5d,
+		#ecec8e
+	);
+	border-radius: 10px;
+	width: 97.5% !important;
+	margin-left: 0.2rem !important;
+}
+.page > li {
+	background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
+		inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+
+	border-radius: 0px 5px 5px 0px;
+	width: 100%;
+	height: 100%;
+	transform-origin: left center;
+}
+.front {
+	transform: rotateY(-34deg) translateZ(8px);
+}
+.back-page {
+	transform: rotateY(-15deg) translateZ(-8px);
+}
+.page li:nth-child(1) {
+	transform: rotateY(-28deg);
+}
+.page li:nth-child(2) {
+	transform: rotateY(-30deg);
+}
+.page li:nth-child(3) {
+	transform: rotateY(-32deg);
+}
+.page li:nth-child(4) {
+	transform: rotateY(-34deg);
+}
+.page li:nth-child(5) {
+	transform: rotateY(-36deg);
+}
+.front,
+.front li,
+.back-page li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}

@@ -1,0 +1,240 @@
+.container-book ul {
+	list-style: none;
+}
+.container-book a {
+	text-decoration: none;
+	color: rgb(90, 88, 88);
+}
+.container-book {
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5% !important;
+	margin-left: 100px;
+	text-align: center;
+}
+.book {
+	position: relative;
+	width: 190px;
+	height: 270px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+.book-icon img {
+	width: 30px;
+	height: auto;
+	margin-top: 1px;
+}
+.writer img {
+	float: left;
+	width: 30px;
+	height: auto;
+	margin-top: 5px;
+	border-radius: 50%;
+	margin-left: 0.5rem;
+}
+.title-book {
+	font-size: 13px;
+	font-weight: bolder;
+	padding-top: 20px;
+}
+.heading-book {
+	margin-top: -15px;
+	color: #fff;
+}
+.sub-title {
+	margin-top: 10px;
+	font-size: 12px;
+}
+.copyright {
+	font-size: 10px;
+	margin-top: -20px;
+}
+.front li {
+	background-color: white;
+	border-radius: 10px;
+}
+.back-page li {
+	background: linear-gradient(
+		to bottom,
+		#dbdb5c,
+		#d4d428,
+		#e2e268,
+		#bdbd5d,
+		#ecec8e
+	);
+	border-radius: 10px;
+	width: 97.5% !important;
+	margin-left: 0.2rem !important;
+}
+.page > li {
+	background: -webkit-linear-gradient(left, #e1ddd8 0%, #f8f4ee 100%);
+	background: linear-gradient(left, #e1ddd8 0%, #f8f4ee 100%);
+
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
+		inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+
+	border-radius: 0px 5px 5px 0px;
+	width: 100%;
+	height: 100%;
+	transform-origin: left center;
+}
+.front {
+	transform: rotateY(-34deg) translateZ(8px);
+	margin-left: 0.2rem;
+}
+.back-page {
+	transform: rotateY(-15deg) translateZ(-8px);
+	position: absolute;
+	z-index: -3;
+}
+.page li:nth-child(1) {
+	transform: rotateY(-28deg);
+	margin-left: -0.2rem;
+}
+.page li:nth-child(2) {
+	transform: rotateY(-30deg);
+	margin-left: -0.4rem;
+}
+.page li:nth-child(3) {
+	transform: rotateY(-32deg);
+}
+.page li:nth-child(4) {
+	transform: rotateY(-34deg);
+}
+.page li:nth-child(5) {
+	transform: rotateY(-36deg);
+}
+.front,
+.back-page,
+.front li,
+.back-page li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d !important;
+}
+.front,
+.back-page {
+	transform-origin: 0% 100%;
+}
+.front {
+	transition: all 0.8s ease, z-index 0.6s;
+	position: absolute;
+	z-index: 10;
+}
+.front li:last-child {
+	transform: rotateY(180deg) translateZ(2px);
+}
+.page,
+.page > li {
+	position: absolute;
+	transform-style: preserve-3d !important;
+}
+.page {
+	width: 100% !important;
+	height: 100% !important;
+	top: 1%;
+	left: 3%;
+}
+.page li {
+	transition-duration: 0.6s;
+}
+.book:hover .front {
+	transform: rotateY(-145deg) translateZ(0);
+	margin-left: 4rem;
+	margin-top: 0.15rem;
+	cursor: pointer;
+}
+.book:hover > .page li:nth-child(1) {
+	transform: rotateY(-30deg);
+	transition: 1.5s;
+	cursor: pointer;
+}
+.book:hover > .page li:nth-child(2) {
+	transform: rotateY(-35deg);
+	transition: 1.8s;
+	cursor: pointer;
+}
+.book:hover > .page li:nth-child(3) {
+	transform: rotateY(-118deg);
+	transition: 1.6s;
+	cursor: pointer;
+}
+.book:hover > .page li:nth-child(4) {
+	transform: rotateY(-130deg);
+	transition: 1.4s;
+	cursor: pointer;
+}
+.book:hover > .page li:nth-child(5) {
+	transform: rotateY(-140deg);
+	transition: 1.2s;
+	cursor: pointer;
+}
+.frontcover {
+	position: absolute;
+	background: linear-gradient(
+		to bottom,
+		#dbdb5c,
+		#d4d428,
+		#e2e268,
+		#bdbd5d,
+		#ecec8e
+	);
+	height: 100%;
+	width: 101%;
+	border-radius: 5px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	cursor: pointer;
+}
+.btnBook {
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 120px;
+	padding: 8px 12px;
+	font-weight: bolder;
+	background: rgb(217, 216, 218);
+	border-radius: 4px;
+	box-shadow: -3px -3px 5px 0px #ffffffa6, 3px 3px 5px 0px #0000004a;
+	text-align: center;
+	transition: color 0.3s, border-color 0.3s;
+}
+.container-advert-book {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.book-advert {
+	position: relative;
+	width: 250px;
+	height: 350px;
+	/*box-shadow: 0 0.2rem 0.5rem rgb(247, 245, 245);*/
+	transform-style: preserve-3d;
+	transform: rotateY(35deg);
+	transition: 1.2s;
+}
+.book-advert:hover {
+	transform: rotateY(90deg);
+	transition: 1.2s;
+}
+.book-advert:before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 350px;
+	transform-origin: left;
+	background: url(../img/book/side.png);
+	background-position: center;
+	transform: rotateY(90deg);
+}
+
+.book-advert img {
+	width: 250px;
+	height: 350px;
+}

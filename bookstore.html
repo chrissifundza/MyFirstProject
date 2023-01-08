@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BookStore | God's Purpose</title>
+	<link rel="shortcut icon" href="img/logo/logo1.png"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebarBookstore.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Css/Up.css" /> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/bookstore.css">
+</head>
+<body>
+	<div id="overlay">
+		<div class="spinner"></div>
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-up"></i>Top</button>
+ <div class="sidebar">
+
+   
+    <ul class="nav-list">
+		<div class="logo-details">
+			<i class='bx bxl-c-plus-plus icon 'style="color: #cfb53b;"></i>
+			<div class="logo_name" >Digital Library</div>
+			<i class='bx bx-menu' id="btn" style="color: #d4a1d1;background-color: #fff;"></i>
+		</div>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="profile.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+    
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile" style="color: #d4a1d1;background-color: #d4a1d1;">
+         <div class="profile-details">
+           <img src="img/defaults/dfault.png" alt="profileImg" id="logout-profile">
+           <div class="name_job">
+             <div class="name">God's Purpose</div>
+             <div class="job">Global Church</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" style="color: #d4a1d1;background-color: #fff;"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+	
+
+		<nav class="navbar fixed-top col-lg-12 bg-light navbar-light navbar-expand-lg nav justify-content-center" style="padding-left: 1rem; padding-right: 0rem;">
+			<div class="text-left" style="display: inline-block;" >
+				<ul class="ul navbar-nav ml-auto text-center">
+					<li class="nav-item" ><img src="img/logo/logo1.png" alt=""  style="width: 3rem!important; height: 3rem!important;"> </li>
+					<div class="collapse navbar-collapse text-center" id="navbarResponsive">
+					<li class="nav-item" ><a href="digitallibrary.html" class="nav-link text-uppercase" style="font-size: 25px; ">God's&nbsp;Purpose</a> </li>
+			</ul>  </div>
+			</div>
+			<div class="col-lg-6 flex d-flex align-items-center justify-content-center">
+				
+
+				<div class=" col-md-8 divSearch border rounded-pill" style="border-color: #cfb53b!Important; padding-left: 5px;">
+				<ul class="ul navbar-nav ml-auto"></ul>
+								<input  class= " col-md-4 col-lg-10 search w-100"type="text" placeholder="Search..." style="outline-color: #fff; color: #cfb53b;background-color: #fff;border-color: #fff!important; border-top: #fff!important;border-left: #fff!Important;">
+								<i class='bx bx-search' style="color: #cfb53b;background-color: #fff;border-color: #cfb53b!important;" ></i>
+							</div>
+					<img src="img/search.png" class="micro" alt="" style="width: 1.5rem!important; height: 1.5rem!important;">
+		
+			</div>
+	<button  class="navbar-toggler" type ="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"> </span>
+	</button>
+
+	<div class="collapse navbar-collapse text-center" id="navbarResponsive">
+		<ul class="ul navbar-nav ml-auto">
+                      
+			<li class="nav-item dropdown nvlink">
+			   
+				 <li class="nav-item dropdown mx-3" >
+					<a class="nav-link  dropdown-toggle " href="#" data-bs-toggle="dropdown">  
+					<img src="img/defaults/dfault.png"class=" dropdown-toggle" width="40px" height="40px" 
+						href="#" data-bs-toggle="dropdown" style="border-radius:50%;" id="digi-profile"><span id="name-digi-pro"></span></a>
+
+					 <ul class="dropdown-menu">
+					   <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                       <li><a class="dropdown-item" href="feed.html"> G-Chats</a></li>
+                       <li><a class="dropdown-item" href="introVideo.html"> DigitalLibrary</a></li>
+                       <li><a class="dropdown-item" href="PartnerWithUs"> PartnerWithUs</a></li>
+					   <li><a class="dropdown-item" href="#" id="logout"> Log Out</a></li>
+					 </ul>
+				</li>
+			</li> 
+			<li class="nav-item mx-3"><a class="nav-link"href=""><i class="fas fa-bell admin-nav-icon" ></a></i></li>
+			<li><button  class="navbar-toggler" type ="button" data-toggle="collapse"data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+			</li>  
+		</ul>
+	
+	
+		</nav>
+
+        <div class="row mb-4   ">
+        <div class=" col-md-4 text-center">
+            <div class="container-advert-book">
+                <div class="book-advert ">
+                    <img src="img/book/front.jpg" alt="">
+                </div>
+            </div>
+            <p class="mt-4" style="color: white;">Available Now!! |<span style="color: #cfb53b; font-weight: bolder;"> DOWNLOAD</span> | </p>
+        </div>
+        <div class=" col-md-4 text-center">
+            <div class="container-advert-book">
+                <div class="book-advert ">
+                    <img src="img/book/front.jpg" alt="">
+                </div>
+            </div>
+            <p class="mt-4" style="color: white;">Available Now!! |<span style="color: #cfb53b; font-weight: bolder;"> DOWNLOAD</span> | </p>
+        </div>
+        <div class=" col-md-4 text-center">
+            <div class="container-advert-book">
+                <div class="book-advert ">
+                    <img src="img/book/front.jpg" alt="">
+                </div>
+            </div>
+            <p class="mt-4" style="color: white;">Available Now!! |<span style="color: #cfb53b; font-weight: bolder;"> DOWNLOAD</span> | </p>
+        </div>
+            
+        </div>
+
+
+		
+
+		
+	
+		
+		
+		
+	
+  </section>
+  	
+</div >
+<div class="socket text-light text-center py-3">
+  <p>&copy; &nbsp;<script> document.write(new Date().getFullYear()); </script><a href=""target="_blank" style="text-decoration: none; color: white;">&nbsp;www.Godspurpose.co.za</a> | All Rights Reserved</p>
+</div>
+ 
+
+
+	
+
+
+
+
+
+
+	<!-- End Socket
+
+		<div class="col-md-4" >
+		<div>
+
+		</div>
+	</div>
+
+	
+		<div class="col-md-4">
+			<img src="img/3.jpg" class="img-fluid" alt="" class="player-btn">
+			<img src="img/player-icon.png" alt="" class="player-btn">
+		</div>
+
+
+		
+	<div class="container mt-5 mb-5">
+
+			<div class="row">
+				<div class="col-md-8">
+					<video width="728" height="410" poster="media/pastor.jpg" controls autoplay preload="none">
+					<source src="media/progress.mkv" type="video/mp4" sizes="576" data-quality="SD">
+					<source src="media/progress.mkv" type="video/mp4" sizes="720" data-quality="HD">
+					<source src="media/progress.mkv" type="video/mp4" sizes="1080" data-quality="FULL HD"> 
+		
+					<track src="caption/Blue_moon.en.vtt" kind="captions" srclang="en" label="English">
+					<track src="caption/Blue_moon.en.vtt" kind="captions" srclang="fr" label="Francais">
+					<track src="caption/Blue_moon.en.vtt" kind="captions" srclang="id" label="Indonesia">
+					<track src="caption/Blue_moon.en.vtt" kind="captions" srclang="ms" label="Melayu">
+					</video>
+		
+				</div>
+		
+			</div>
+		
+		</div>
+	
+	-->
+
+	
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAClAhXNEZbmaqFbW6brFeuTmX-T3lDH7Q",
+    authDomain: "global-church-b9d22.firebaseapp.com",
+    projectId: "global-church-b9d22",
+    storageBucket: "global-church-b9d22.appspot.com",
+    messagingSenderId: "906707524519",
+    appId: "1:906707524519:web:62c0d179d741e798e67482",
+    measurementId: "G-SGBEBKBRQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true})
+  firebase.analytics();
+
+  
+</script>
+
+
+	<!-- Script Source Files 
+	db.collection('VideoList').add({
+			  Title:(fname),
+	       Url: (url)
+		  
+	
+        })
+	-->
+	<script src="js/video-player.js"></script>
+	<script src="js/spinner.js"></script>
+	<script src="js/sidebar.js"></script>
+	<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+	<script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.17/mediaelement-and-player.min.js" integrity="sha512-hLCA6qoEOSjwOEIc6xi7p0g6/uW2SAqS7gGZIxfN4jYabdJVsW7ANuUeih/vRrU3nGpf9cnsadaC+W3qoDqIQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/all.min.js"></script>
+	<script src="js/admin.js"></script>
+	<script src="js/top.js"></script>
+	
+	
+	
+	
+
+	<!-- End Script Source Files
+
+
+function readTask(){
+	firebase.firestore().collection('VideoList').onSnapshot(function(snapshot){
+	
+		snapshot.forEach(function(taskValue){
+			document.getElementById("parent").innerHTML+=`
+			<div class="col-md-4 pt-0 ">
+	
+	<img src="${taskValue.data().PhotoUrl}" onclick="display(${taskValue.id})" class="w-100 h-50" alt="" >
+
+	
+
+	
+   <h6 class="pt-3 font-weight-bold" style="color:#3d3b3bf3" >${taskValue.data().Title}</h6>
+   
+	   
+   </div>
+			
+			`
+		})
+	})
+}
+	
+
+		task.on('state_changed', function progress(snapshot) {
+    var percentage = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+    uploader.value = percentage;
+
+	
+
+		 var task = storageRef.put(file);
+  task.on('state_changed', function progress(snapshot) {
+    var percentage = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+    uploader.value = percentage;
+
+  }, function error(err) {
+
+
+  },function completed() {
+	storageRef.getDownloadURL().then(url=>{
+		console.log(url);
+		db.collection('ParentsList').add({
+	    Url: (url)
+
+
+
+
+
+	var mediaElements = document.querySelectorAll('video, audio');
+
+for (var i = 0, total = mediaElements.length; i < total; i++) {
+	new MediaElementPlayer(mediaElements[i], {
+		features: ['playpause', 'current', 'progress', 'duration', 'volume', 'tracks','speed', 'quality','loop',
+			'fullscreen'],
+			speeds: [
+				{name: '0.25', value: '0.25'},
+				{name: '0.5', value: '0.5'},
+				{name: '0.75', value: '0.75'},
+				{name: 'Normal', value: '1'},
+				{name: '1.25', value: '1.25'},
+				{name: '1.75', value: '1.75'},
+				{name: '2', value: '2'},
+			]
+	});
+}
+	-->
+</body>
+</html>
